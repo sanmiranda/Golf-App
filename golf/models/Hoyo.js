@@ -6,9 +6,15 @@ const hoyoSchema = new Schema (
     id: Number,
     numHoyo: Number,
     courseId: Number,
-  })
-
-
+    par: Number,
+  },
+  {
+    timestamps: {
+      createdAt: true,
+      updatedAt: true
+    }
+  }
+)
 
 
 

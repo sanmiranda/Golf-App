@@ -26,8 +26,14 @@ const campoSchema = new Schema (
       teeboxtype: String,
       slope: Number,
       rating: Number,
-  }),
-     
+    },
+    {
+      timestamps: {
+        createdAt: true,
+        updatedAt: true
+      }
+    }
+  )
 
 
 const campo = mongoose.model('campo', campoSchema);

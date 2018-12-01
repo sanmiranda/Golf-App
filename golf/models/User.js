@@ -16,13 +16,14 @@ const userSchema = new Schema (
     image: String,
     // imagePath:String,
     // imageName:String,
-    age: Number,
-    gender:{
-      type: String,
-      enum: [hombre, mujer]
-    },
+    // age: Number,
+    // gender:{
+    //   type: String,
+    //   enum: [hombre, mujer]
+    // },
     handicap: Number,
-    homeCourse: String,
+  //   homeCourse: String,
+  // },
   },
   {
     timestamps: {
@@ -31,8 +32,3 @@ const userSchema = new Schema (
     }
   }
 )
-
-const user = mongoose.model('user', userSchema);
-
-module.exports = user;
-
